@@ -1,0 +1,21 @@
+import random
+
+def get_even_numbers(numbers):
+    return [num for num in numbers if num % 2 == 0]
+
+# Generate a random list of numbers
+numbers = [random.randint(1, 100) for _ in range(10)]
+
+# Print the generated list
+print("Generated numbers:", numbers)
+
+# Get the even numbers from the generated list
+even_numbers = get_even_numbers(numbers)
+
+# Print the even numbers
+print("Even numbers:", even_numbers)
+
+
+# OUTPUT 
+Generated numbers: [15, 42, 87, 3, 54, 11, 77, 69, 24, 98]
+Even numbers: [42, 54, 24, 98]
